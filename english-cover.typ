@@ -1,9 +1,8 @@
 #import "@preview/tablex:0.0.7": gridx, hlinex
 #let english-cover(
   roman: "Times New Roman", songti: "Noto Serif CJK SC", heiti: "Noto CJKSans SC",
-  secret: [公开], title: [Master/Doctoral Disstertation], dissertation-title, student-id,
-  name, major, supervisor, institute,
-  date,
+  title: [Master/Doctoral Disstertation], dissertation-title, student-id, name,
+  major, supervisor, institute, date,
 ) = {
   set page(paper: "a4", margin: (x: 3.17cm, y: 2.54cm))
   align(
