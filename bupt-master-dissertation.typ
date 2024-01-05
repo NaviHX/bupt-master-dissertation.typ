@@ -1,5 +1,7 @@
 #import "@preview/tablex:0.0.7": gridx, tablex, hlinex, colspanx
 #import "@preview/i-figured:0.2.3"
+#import "chinese-cover.typ": chinese-cover
+#import "english-cover.typ": english-cover
 
 #let defense-committee(
   roman: "Times New Roman", songti: "Noto Serif CJK SC", heiti: "Noto Sans CJK SC",

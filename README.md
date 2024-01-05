@@ -73,4 +73,38 @@
 #let declaration(
   roman: "Times New Roman", songti: "Noto Serif CJK SC", heiti: "Noto Sans CJK SC",
 ) = [ ... ]
+
+```
+
+### Cover
+
+```typst
+#let chinese-cover(
+  roman: "Times New Roman", songti: "Noto Serif CJK SC", heiti: "Noto CJKSans SC",
+  secret: [公开],
+  title: [硕/博士学位论文（学术学位）],
+  method: [全日制],
+  dissertation-title,
+  student-id,
+  name,
+  major,
+  supervisor,
+  institute,
+  date, // datetime type
+) = { ... }
+```
+
+```typst
+#let english-cover(
+  roman: "Times New Roman", songti: "Noto Serif CJK SC", heiti: "Noto CJKSans SC",
+  secret: [公开],
+  title: [Master/Doctoral Disstertation],
+  dissertation-title,
+  student-id,
+  name,
+  major,
+  supervisor,
+  institute,
+  date,
+) = { ... }
 ```

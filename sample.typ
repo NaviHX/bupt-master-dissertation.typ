@@ -1,4 +1,13 @@
-#import "bupt-master-dissertation.typ": bupt-template, bupt-table-figure, bupt-image-figure, defense-committee, declaration
+#import "bupt-master-dissertation.typ": bupt-template, bupt-table-figure, bupt-image-figure, defense-committee, declaration, chinese-cover, english-cover
+
+#chinese-cover(
+  [基于 Typst 的论文排版研究], [20xxxxxxxx], [张三], [网络安全],
+  [方xx], [网络安全学院], datetime.today(),
+)
+#english-cover(
+  [Research on paper formatting based on Typst], [20xxxxxxxx], [张三], [网络安全],
+  [方xx], [网络安全学院], datetime.today(),
+)
 
 #defense-committee(
   (
@@ -78,7 +87,8 @@
 
 #bupt-image-figure([校徽], lorem(3), image("./image/logo.png", width: 30%))
 
-此外，本章将突出先前研究中的争论点和未解决问题，为本文后续的研究提供理论基础。我们还将比较不同研究方法的优缺点，并明确本研究的创新点和独特之处。 @Kimmel2004Rumors
+此外，本章将突出先前研究中的争论点和未解决问题，为本文后续的研究提供理论基础。我们还将比较不同研究方法的优缺点，并明确本研究的创新点和独特之处。
+@Kimmel2004Rumors
 
 通过对文献的全面综述，第二章旨在为读者提供一个对[章节名称]领域的全面理解，并为本研究的深入探讨奠定基础。
 
