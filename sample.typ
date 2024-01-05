@@ -1,4 +1,4 @@
-#import "template.typ": bupt-template, bupt-table-figure, bupt-image-figure, defense-committee, declaration
+#import "bupt-master-dissertation.typ": bupt-template, bupt-table-figure, bupt-image-figure, defense-committee, declaration
 
 #defense-committee(
   (
