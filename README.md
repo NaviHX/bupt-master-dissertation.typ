@@ -1,6 +1,6 @@
-= BUPT-Master-Dissertation.typ
+# BUPT-Master-Dissertation.typ
 
-== How to use
+## How to use
 
 ```typst
 // main.typ
