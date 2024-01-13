@@ -8,14 +8,14 @@
 #import "bupt-master-dissertation.typ": bupt-template
 
 #show: rest => bupt-template(
-  // 中文摘要
-  [
+  // 中文摘要 (abstraction, ..keywords)
+  ([
     ...
-  ], ([关键词1], [关键词2], [关键词3], [关键词4], [关键词5]),
-  // 英文摘要
-  [
+  ], [关键词1], [关键词2], [关键词3], [关键词4], [关键词5]),
+  // 英文摘要 (abstraction, ..keywords)
+  ([
     ...
-  ], ([Keyword1], [Keyword2], [Keyword3], [Keyword4], [Keyword5]),
+  ], [Keyword1], [Keyword2], [Keyword3], [Keyword4], [Keyword5]),
   // 符号说明
   (([$A$], [截面积], [$m^2$]), ([$F$], [力], [$N$]), ([$e$], [电子电荷], [$V$]),),
   // 参考文献
