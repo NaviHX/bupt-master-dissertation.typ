@@ -20,15 +20,15 @@
 
 #show: rest => bupt-template(
   // 中文摘要
-  [
+  ([
     本文旨在探讨[章节名称]的相关问题，并通过深入研究和分析，提出了一系列有针对性的解决方案。在这一研究中，我们首先回顾了相关领域的文献，深入了解了当前问题的研究现状和存在的挑战。随后，我们通过实证研究和数据分析，对[章节名称]的影响因素进行了详尽的探讨。
 
     通过对实验结果的分析，我们发现[章节名称]在特定条件下呈现出明显的趋势和规律。基于这些发现，本文提出了一系列可行的解决方案，旨在优化[章节名称]的相关问题，提高其效率和性能。同时，我们也探讨了这些解决方案可能面临的挑战和局限性，为未来的研究方向提供了一些建议。
 
     综上所述，本文通过对[章节名称]的全面研究，为相关领域的研究提供了有价值的参考和启示。希望本研究能够为解决[章节名称]相关问题提供新的思路，并为未来相关研究提供有益的参考。
-  ], ([关键词1], [关键词2], [关键词3], [关键词4], [关键词5]),
+  ], [关键词1], [关键词2], [关键词3], [关键词4], [关键词5]),
   // 英文摘要
-  [
+  ([
     In this paper, we aim to explore the issues related to [Chapter Title] and
     propose a series of targeted solutions through in-depth research and analysis.
     In this study, we first review the literature in the relevant field to
@@ -48,7 +48,7 @@
     is hoped that this research will offer new insights for solving the issues
     related to [Chapter Title] and provide useful references for future related
     studies.
-  ], ([Keyword1], [Keyword2], [Keyword3], [Keyword4], [Keyword5]),
+  ], [Keyword1], [Keyword2], [Keyword3], [Keyword4], [Keyword5]),
   // 符号说明
   (([$A$], [截面积], [$m^2$]), ([$F$], [力], [$N$]), ([$e$], [电子电荷], [$V$]),),
   // 参考文献

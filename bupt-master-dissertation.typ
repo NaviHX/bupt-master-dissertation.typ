@@ -48,6 +48,34 @@
   导师签名：#box(line(length: 9em)) #h(2em) 日期：#box(line(length: 9em))
 ]
 
+#let bupt-chinese-abstract(heiti, abstract, ..keywords) = [
+    #set text(size: 14pt)
+    #set heading(numbering: none)
+    #show heading: set text(15pt)
+
+    = 摘要
+    #v(1em)
+
+    #abstract
+
+    #text(font: heiti, weight: "bold")[关键词：]
+    #keywords.pos().join([；])
+]
+
+#let bupt-english-abstract(abstract, ..keywords) = [
+    #set text(size: 14pt)
+    #set heading(numbering: none)
+    #show heading: set text(15pt)
+
+    = ABSTRACT
+    #v(2em)
+
+    #abstract
+
+    #text(weight: "bold")[KEY WORDS:]
+    #keywords.pos().join("; ")
+]
+
 #let bupt-table-figure(chinese-caption, english-caption, t) = {
   figure(
     caption: chinese-caption, supplement: [表], kind: "表", figure(caption: english-caption, supplement: [Table], t),
@@ -62,8 +90,8 @@
 
 #let bupt-template(
   roman: "Times New Roman", songti: "Noto Serif CJK SC", heiti: "Noto Sans CJK SC",
-  even-page-header: [北京邮电大学硕士学位论文], chinese-abstract, chinese-keywords, english-abstract,
-  english-keywords, symbols, bib, appendix,
+  even-page-header: [北京邮电大学硕士学位论文], chinese-abstract, english-abstract,
+  symbols, bib, appendix,
   acknowledgment, achievement, content,
 ) = {
   // Preamble
@@ -144,27 +172,12 @@
   }
 
   // Abstract
-  [
-    #set text(size: 14pt)
-    #set heading(numbering: none)
-    #show heading: set text(15pt)
-
-    = 摘要
-    #v(1em)
-
-    #chinese-abstract
-
-    #text(font: heiti, weight: "bold")[关键词：]
-    #chinese-keywords.join([；])
-
-    = ABSTRACT
-    #v(2em)
-
-    #english-abstract
-
-    #text(font: roman, weight: "bold")[KEY WORDS:]
-    #english-keywords.join("; ")
-  ]
+  if chinese-abstract != none {
+    bupt-chinese-abstract(heiti, ..chinese-abstract)
+  }
+  if english-abstract != none {
+    bupt-english-abstract(..english-abstract)
+  }
 
   // ToC
   heading(numbering: none, outlined: false)[目录]
